@@ -14,6 +14,10 @@ public class DialogueLine
     public string line;
 
     public Sprite BackGround;
+
+    public string question;
+    public string[] answers;
+    public int correctAnswerIndex;
 }
 
 [System.Serializable]
@@ -26,9 +30,5 @@ public class Dialogue
 public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
-
-    public void TriggerDialogue()
-    {
-        DialogueManager.Instance.StartDialogue(dialogue);
-    }
+    public Dialogue secondDialogue;
 }

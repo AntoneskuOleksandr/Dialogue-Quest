@@ -231,7 +231,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 115360216}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -762,7 +762,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &644267187
+--- !u!1 &644327828
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -770,45 +770,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 644267188}
-  - component: {fileID: 644267191}
-  - component: {fileID: 644267190}
-  - component: {fileID: 644267189}
+  - component: {fileID: 644327829}
+  - component: {fileID: 644327832}
+  - component: {fileID: 644327831}
+  - component: {fileID: 644327830}
   m_Layer: 5
-  m_Name: Start
+  m_Name: Button (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &644267188
+  m_IsActive: 0
+--- !u!224 &644327829
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644267187}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_GameObject: {fileID: 644327828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1077302569}
-  m_Father: {fileID: 739219658}
-  m_RootOrder: 3
+  - {fileID: 1697162808}
+  m_Father: {fileID: 2035296246}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchoredPosition: {x: 0, y: 265}
+  m_SizeDelta: {x: 300, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &644267189
+--- !u!114 &644327830
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644267187}
+  m_GameObject: {fileID: 644327828}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -842,29 +842,17 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 644267190}
+  m_TargetGraphic: {fileID: 644327831}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2035296250}
-        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
-        m_MethodName: TriggerDialogue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &644267190
+      m_Calls: []
+--- !u!114 &644327831
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644267187}
+  m_GameObject: {fileID: 644327828}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -888,13 +876,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &644267191
+--- !u!222 &644327832
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 644267187}
+  m_GameObject: {fileID: 644327828}
   m_CullTransparentMesh: 1
 --- !u!1 &739219654
 GameObject:
@@ -991,7 +979,7 @@ RectTransform:
   - {fileID: 184587418}
   - {fileID: 496870121}
   - {fileID: 838535397}
-  - {fileID: 644267188}
+  - {fileID: 1799540249}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1000,6 +988,128 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &750753073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 750753077}
+  - component: {fileID: 750753076}
+  - component: {fileID: 750753075}
+  - component: {fileID: 750753074}
+  m_Layer: 5
+  m_Name: Button
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &750753074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750753073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 750753075}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &750753075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750753073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &750753076
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750753073}
+  m_CullTransparentMesh: 1
+--- !u!224 &750753077
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750753073}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1319027807}
+  m_Father: {fileID: 2035296246}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 415}
+  m_SizeDelta: {x: 300, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &763241104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1490,11 +1600,11 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014769269}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!1 &1077302568
+--- !u!1 &1235826436
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1502,9 +1612,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1077302569}
-  - component: {fileID: 1077302571}
-  - component: {fileID: 1077302570}
+  - component: {fileID: 1235826437}
+  - component: {fileID: 1235826439}
+  - component: {fileID: 1235826438}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1512,33 +1622,33 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1077302569
+--- !u!224 &1235826437
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077302568}
+  m_GameObject: {fileID: 1235826436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 644267188}
+  m_Father: {fileID: 1799540249}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -83.94739}
+  m_SizeDelta: {x: 250.0881, y: 167.8947}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1077302570
+--- !u!114 &1235826438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077302568}
+  m_GameObject: {fileID: 1235826436}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -1552,7 +1662,142 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Start Dialogue
+  m_text: EXIT
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 1bdbc4fc685b05e4da5caf03ed15ca49, type: 2}
+  m_sharedMaterial: {fileID: 3828498413277200818, guid: 1bdbc4fc685b05e4da5caf03ed15ca49, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 100
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 100
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 5
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1235826439
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235826436}
+  m_CullTransparentMesh: 1
+--- !u!1 &1319027806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1319027807}
+  - component: {fileID: 1319027809}
+  - component: {fileID: 1319027808}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1319027807
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319027806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 750753077}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1319027808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319027806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Answer1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1579,13 +1824,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 41.3
+  m_fontSize: 72
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1621,13 +1866,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1077302571
+--- !u!222 &1319027809
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077302568}
+  m_GameObject: {fileID: 1319027806}
   m_CullTransparentMesh: 1
 --- !u!1 &1342568776
 GameObject:
@@ -1762,6 +2007,289 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1342568776}
+  m_CullTransparentMesh: 1
+--- !u!1 &1697162807
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697162808}
+  - component: {fileID: 1697162810}
+  - component: {fileID: 1697162809}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1697162808
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697162807}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 644327829}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1697162809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697162807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Answer2
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1697162810
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697162807}
+  m_CullTransparentMesh: 1
+--- !u!1 &1799540248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799540249}
+  - component: {fileID: 1799540253}
+  - component: {fileID: 1799540252}
+  - component: {fileID: 1799540251}
+  - component: {fileID: 1799540250}
+  m_Layer: 5
+  m_Name: QuestMenuButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1799540249
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799540248}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1235826437}
+  m_Father: {fileID: 739219658}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -704}
+  m_SizeDelta: {x: 512, y: 512}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1799540250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799540248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89683f2c28dee6144a964bb6d061e011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _alphaLevel: 1
+--- !u!114 &1799540251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799540248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1799540252}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 496870123}
+        m_TargetAssemblyTypeName: LevelTransition, Assembly-CSharp
+        m_MethodName: StartChangeScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &1799540252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799540248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e45d716a6fb15d64ea16f051be02c920, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1799540253
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799540248}
   m_CullTransparentMesh: 1
 --- !u!1 &1988754596
 GameObject:
@@ -1934,6 +2462,8 @@ RectTransform:
   - {fileID: 115360220}
   - {fileID: 1014769272}
   - {fileID: 1342568777}
+  - {fileID: 750753077}
+  - {fileID: 644327829}
   m_Father: {fileID: 184587418}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1956,12 +2486,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   character1Icon: {fileID: 115360217}
   character2Icon: {fileID: 1014769270}
+  answerButton1: {fileID: 750753074}
+  answerButton2: {fileID: 644327830}
+  continueButton: {fileID: 1342568778}
+  questMenuButton: {fileID: 1799540251}
   character1Name: {fileID: 1988754597}
   character2Name: {fileID: 942439754}
   character1Animator: {fileID: 115360221}
   character2Animator: {fileID: 1014769273}
   dialogueArea: {fileID: 763241105}
   backGroundManager: {fileID: 184587421}
+  dialogueTrigger: {fileID: 2035296250}
   isDialogueActive: 0
   typingSpeed: 0.05
   delayBeforeTyping: 0
@@ -2028,6 +2563,9 @@ MonoBehaviour:
         \u041D\u043E\u0447\u044C \u043D\u0430 26 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F
         1983 \u0433\u043E\u0434\u0430.\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 0}
       whoSpeak: 1
@@ -2043,6 +2581,9 @@ MonoBehaviour:
         \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
         \u0440\u0430\u0431\u043E\u0442\u0443 \u0441\u0438\u0441\u0442\u0435\u043C\u044B.\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 1
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 2
@@ -2054,6 +2595,9 @@ MonoBehaviour:
         \u0437\u0430\u043C\u0435\u0441\u0442\u0438\u0442\u0435\u043B\u044C \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u0438\u043A\u0430
         \u0441\u043C\u0435\u043D\u044B. \u0420\u0430\u0434 \u043F\u043E\u0437\u043D\u0430\u043A\u043E\u043C\u0438\u0442\u044C\u0441\u044F.\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 1
@@ -2063,6 +2607,9 @@ MonoBehaviour:
         \u0413\u0434\u0435 \u044F \u043C\u043E\u0433\u0443 \u043D\u0430\u0439\u0442\u0438
         \u043D\u0430\u0447\u0430\u043B\u044C\u043D\u0438\u043A\u0430 \u0441\u043C\u0435\u043D\u044B?\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 2
@@ -2070,12 +2617,18 @@ MonoBehaviour:
         \u041F\u043E\u0439\u0434\u0435\u043C\u0442\u0435, \u044F \u0432\u0430\u0441
         \u043A \u043D\u0435\u043C\u0443 \u043F\u0440\u043E\u0432\u043E\u0436\u0443.\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 1
       line: "\u0410\u043B\u0435\u043A\u0441\u0435\u0439: \u0421\u043F\u0430\u0441\u0438\u0431\u043E.
         (\u0438\u0434\u0435\u0442 \u0437\u0430 \u0412\u0438\u043A\u0442\u043E\u0440\u043E\u043C)"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 2
@@ -2088,7 +2641,10 @@ MonoBehaviour:
         \u0437\u0430 \u043F\u0440\u0438\u043D\u044F\u0442\u0438\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u0439
         \u0432 \u0441\u043B\u0443\u0447\u0430\u0435 \u043E\u0431\u043D\u0430\u0440\u0443\u0436\u0435\u043D\u0438\u044F
         \u0440\u0430\u043A\u0435\u0442\u043D\u043E\u0433\u043E \u043D\u0430\u043F\u0430\u0434\u0435\u043D\u0438\u044F.\r\n"
-      BackGround: {fileID: 21300000, guid: 5eeba66c47c4df146b232879483fb327, type: 3}
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 1
@@ -2101,18 +2657,27 @@ MonoBehaviour:
         \u043F\u043E\u0437\u0434\u043E\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F
         \u0441 \u043D\u0438\u043C.\r\n"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 2
       line: " \u041A\u043E\u043D\u0435\u0447\u043D\u043E, \u043F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430.
         (\u0441\u0442\u0443\u0447\u0438\u0442 \u0432 \u0434\u0432\u0435\u0440\u044C)"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 1
       line: "(\u043E\u0442\u043A\u0440\u044B\u0432\u0430\u0435\u0442 \u0434\u0432\u0435\u0440\u044C)
         \u0414\u0430, \u0447\u0442\u043E \u0432\u0430\u043C \u043D\u0430\u0434\u043E?"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 2
@@ -2124,6 +2689,9 @@ MonoBehaviour:
         \u0447\u0442\u043E\u0431\u044B \u043F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C
         \u0440\u0430\u0431\u043E\u0442\u0443 \u0441\u0438\u0441\u0442\u0435\u043C\u044B.\r\n"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       character2: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       whoSpeak: 1
@@ -2135,6 +2703,9 @@ MonoBehaviour:
         (\u043F\u0440\u043E\u043F\u0443\u0441\u043A\u0430\u0435\u0442 \u0410\u043B\u0435\u043A\u0441\u0435\u044F
         \u0432 \u043A\u0430\u0431\u0438\u043D\u0435\u0442)\r\n"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       character2: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       whoSpeak: 2
@@ -2146,7 +2717,10 @@ MonoBehaviour:
         \u042F \u043E\u0447\u0435\u043D\u044C \u0440\u0430\u0434 \u0432\u0430\u0441
         \u0432\u0438\u0434\u0435\u0442\u044C. \u042F \u0441\u043B\u044B\u0448\u0430\u043B
         \u043E \u0432\u0430\u0441 \u043C\u043D\u043E\u0433\u043E \u0445\u043E\u0440\u043E\u0448\u0435\u0433\u043E.\r\n"
-      BackGround: {fileID: 0}
+      BackGround: {fileID: 21300000, guid: 5eeba66c47c4df146b232879483fb327, type: 3}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       character2: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       whoSpeak: 1
@@ -2162,6 +2736,9 @@ MonoBehaviour:
         \u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0435 \u0443\u0437\u043B\u044B
         \u0438 \u043F\u0440\u0438\u0431\u043E\u0440\u044B.\r\n"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       character2: {fileID: 11400000, guid: a2d7f756f597230499f6b3b1f5879e39, type: 2}
       whoSpeak: 2
@@ -2171,6 +2748,9 @@ MonoBehaviour:
         (\u0432\u044B\u0432\u043E\u0434\u0438\u0442 \u0410\u043B\u0435\u043A\u0441\u0435\u044F
         \u0438\u0437 \u043A\u0430\u0431\u0438\u043D\u0435\u0442\u0430)\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 0}
       whoSpeak: 1
@@ -2185,6 +2765,9 @@ MonoBehaviour:
         \u042F \u0434\u043E\u043B\u0436\u0435\u043D \u043F\u0440\u0435\u0434\u043E\u0442\u0432\u0440\u0430\u0442\u0438\u0442\u044C
         \u044F\u0434\u0435\u0440\u043D\u0443\u044E \u0432\u043E\u0439\u043D\u0443.\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       whoSpeak: 1
@@ -2196,6 +2779,9 @@ MonoBehaviour:
         \u0441\u0438\u0441\u0442\u0435\u043C\u044B. \u0412\u0441\u0435 \u0440\u0430\u0431\u043E\u0442\u0430\u0435\u0442
         \u043D\u043E\u0440\u043C\u0430\u043B\u044C\u043D\u043E.\r\n"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
     - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
       character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
       whoSpeak: 2
@@ -2204,3 +2790,884 @@ MonoBehaviour:
         \u0437\u0430 \u0432\u0430\u0448\u0443 \u0440\u0430\u0431\u043E\u0442\u0443.
         \u0412\u044B \u0445\u043E\u0440\u043E\u0448\u0438\u0439 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442.\r"
       BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447. \u0412\u044B
+        \u0442\u043E\u0436\u0435 \u043E\u0447\u0435\u043D\u044C \u0445\u043E\u0440\u043E\u0448\u0438\u0439
+        \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u0438\u0441\u0442. \u042F \u0432\u043E\u0441\u0445\u0438\u0449\u0430\u044E\u0441\u044C
+        \u0432\u0430\u0448\u0438\u043C \u043F\u0440\u043E\u0444\u0435\u0441\u0441\u0438\u043E\u043D\u0430\u043B\u0438\u0437\u043C\u043E\u043C
+        \u0438 \u0441\u043C\u0435\u043B\u043E\u0441\u0442\u044C\u044E.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "\u0441\u043C\u0443\u0449\u0430\u0435\u0442\u0441\u044F) \u0414\u0430
+        \u0447\u0442\u043E \u0432\u044B, \u0410\u043B\u0435\u043A\u0441\u0435\u0439
+        \u0418\u0432\u0430\u043D\u043E\u0432\u0438\u0447. \u042F \u043F\u0440\u043E\u0441\u0442\u043E
+        \u0434\u0435\u043B\u0430\u044E \u0441\u0432\u043E\u044E \u0440\u0430\u0431\u043E\u0442\u0443.
+        \u041D\u043E \u0441\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u043A\u043E\u043C\u043F\u043B\u0438\u043C\u0435\u043D\u0442.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432 \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447,
+        \u044F \u0445\u043E\u0447\u0443 \u043F\u0440\u0435\u0434\u043B\u043E\u0436\u0438\u0442\u044C
+        \u0432\u0430\u043C \u0433\u043E\u043B\u043E\u0432\u043E\u043B\u043E\u043C\u043A\u0443.
+        \u041E\u043D\u0430 \u043F\u043E\u043C\u043E\u0436\u0435\u0442 \u0432\u0430\u043C
+        \u043F\u043E\u043D\u044F\u0442\u044C, \u043D\u0430\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+        \u0432\u0430\u0436\u043D\u043E \u0434\u043E\u0432\u0435\u0440\u044F\u0442\u044C
+        \u0441\u0432\u043E\u0435\u043C\u0443 \u0438\u043D\u0442\u0443\u0438\u0446\u0438\u0438
+        \u0438 \u0437\u0434\u0440\u0430\u0432\u043E\u043C\u0443 \u0441\u043C\u044B\u0441\u043B\u0443.
+        \u0412\u044B \u0433\u043E\u0442\u043E\u0432\u044B?"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u043A\u0438\u0432\u0430\u0435\u0442) \u042F \u0433\u043E\u0442\u043E\u0432,
+        \u0410\u043B\u0435\u043A\u0441\u0435\u0439 \u0418\u0432\u0430\u043D\u043E\u0432\u0438\u0447."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u0410\u043B\u0435\u043A\u0441\u0435\u0439: \u041E\u0442\u043B\u0438\u0447\u043D\u043E.
+        \u0412\u043E\u0442 \u043E\u043D\u0430: \u0443 \u0432\u0430\u0441 \u0435\u0441\u0442\u044C
+        \u0434\u0432\u0435 \u043A\u043E\u0440\u043E\u0431\u043A\u0438, \u043E\u0434\u043D\u0430
+        \u0438\u0437 \u043A\u043E\u0442\u043E\u0440\u044B\u0445 \u0441\u043E\u0434\u0435\u0440\u0436\u0438\u0442
+        \u0437\u043E\u043B\u043E\u0442\u043E, \u0430 \u0434\u0440\u0443\u0433\u0430\u044F
+        - \u043F\u0443\u0441\u0442\u0430."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u041D\u0430 \u043A\u043E\u0440\u043E\u0431\u043A\u0430\u0445 \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u044B
+        \u043D\u0430\u0434\u043F\u0438\u0441\u0438. \u041D\u0430 \u043A\u043E\u0440\u043E\u0431\u043A\u0435
+        \u0441 \u0437\u043E\u043B\u043E\u0442\u043E\u043C \u043D\u0430\u043F\u0438\u0441\u0430\u043D\u043E
+        \u201C\u0417\u043E\u043B\u043E\u0442\u043E \u0437\u0434\u0435\u0441\u044C\u201D,
+        \u0430 \u043D\u0430 \u043F\u0443\u0441\u0442\u043E\u0439 \u043A\u043E\u0440\u043E\u0431\u043A\u0435
+        - \u201C\u0417\u043E\u043B\u043E\u0442\u043E \u043D\u0435 \u0437\u0434\u0435\u0441\u044C\u201D.
+        \u041E\u0434\u043D\u0430 \u0438\u0437 \u043D\u0430\u0434\u043F\u0438\u0441\u0435\u0439
+        \u0432\u0435\u0440\u043D\u0430, \u0434\u0440\u0443\u0433\u0430\u044F - \u043B\u043E\u0436\u043D\u0430.
+        \u041A\u0430\u043A\u0443\u044E \u043A\u043E\u0440\u043E\u0431\u043A\u0443
+        \u0432\u044B \u0432\u044B\u0431\u0435\u0440\u0435\u0442\u0435?"
+      BackGround: {fileID: 0}
+      question: "\u041A\u0430\u043A\u0443\u044E \u043A\u043E\u0440\u043E\u0431\u043A\u0443
+        \u0432\u044B \u0432\u044B\u0431\u0435\u0440\u0435\u0442\u0435?"
+      answers:
+      - "\u0417\u043E\u043B\u043E\u0442\u043E \u0437\u0434\u0435\u0441\u044C"
+      - "\u0417\u043E\u043B\u043E\u0442\u043E \u043D\u0435 \u0437\u0434\u0435\u0441\u044C"
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u041F\u043E\u0437\u0434\u0440\u0430\u0432\u043B\u044F\u044E, \u0432\u044B
+        \u0441\u0434\u0435\u043B\u0430\u043B\u0438 \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439
+        \u0432\u044B\u0431\u043E\u0440"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432 \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447,
+        \u043C\u043E\u0433\u0443 \u044F \u0432\u0430\u0441 \u0435\u0449\u0435 \u043E
+        \u0447\u0435\u043C-\u0442\u043E \u043F\u043E\u043F\u0440\u043E\u0441\u0438\u0442\u044C?\r\n\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "\u041A\u043E\u043D\u0435\u0447\u043D\u043E, \u0410\u043B\u0435\u043A\u0441\u0435\u0439,
+        \u0447\u0442\u043E \u0432\u044B \u0445\u043E\u0442\u0438\u0442\u0435?"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u042F \u0445\u043E\u0447\u0443 \u043F\u043E\u043F\u0440\u043E\u0441\u0438\u0442\u044C
+        \u0432\u0430\u0441 \u043E \u0442\u043E\u043C, \u0447\u0442\u043E\u0431\u044B
+        \u0432\u044B \u0432\u0441\u0435\u0433\u0434\u0430 \u0434\u043E\u0432\u0435\u0440\u044F\u043B\u0438
+        \u0441\u0432\u043E\u0435\u0439 \u0438\u043D\u0442\u0443\u0438\u0446\u0438\u0438
+        \u0438 \u0437\u0434\u0440\u0430\u0432\u043E\u043C\u0443 \u0441\u043C\u044B\u0441\u043B\u0443"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u0443\u0434\u0438\u0432\u043B\u044F\u0435\u0442\u0441\u044F) \u0410
+        \u043F\u043E\u0447\u0435\u043C\u0443 \u0432\u044B \u043E\u0431 \u044D\u0442\u043E\u043C
+        \u0441\u043F\u0440\u0430\u0448\u0438\u0432\u0430\u0435\u0442\u0435?"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u041F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E \u044F \u0437\u043D\u0430\u044E,
+        \u0447\u0442\u043E \u0432 \u0431\u043B\u0438\u0436\u0430\u0439\u0448\u0435\u0435
+        \u0432\u0440\u0435\u043C\u044F \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435
+        \u0441\u0442\u043E\u043B\u043A\u043D\u0443\u0442\u044C\u0441\u044F \u0441
+        \u043E\u0447\u0435\u043D\u044C \u0441\u043B\u043E\u0436\u043D\u043E\u0439
+        \u0441\u0438\u0442\u0443\u0430\u0446\u0438\u0435\u0439, \u043A\u043E\u0442\u043E\u0440\u0430\u044F
+        \u043F\u043E\u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u043E\u0442 \u0432\u0430\u0441
+        \u0431\u044B\u0441\u0442\u0440\u043E\u0433\u043E \u0438 \u0432\u0435\u0440\u043D\u043E\u0433\u043E
+        \u0440\u0435\u0448\u0435\u043D\u0438\u044F.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u043D\u0430\u0441\u0442\u043E\u0440\u043E\u0436\u0435\u043D\u043D\u043E)
+        \u041E\u0442\u043A\u0443\u0434\u0430 \u0432\u044B \u0437\u043D\u0430\u0435\u0442\u0435
+        \u043E\u0431 \u044D\u0442\u043E\u043C?\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u042F \u043F\u0440\u043E\u0441\u0442\u043E \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044E
+        \u044D\u0442\u043E. \u042F \u0447\u0443\u0432\u0441\u0442\u0432\u0443\u044E,
+        \u0447\u0442\u043E \u0432\u044B - \u0447\u0435\u043B\u043E\u0432\u0435\u043A,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043C\u043E\u0436\u0435\u0442
+        \u0441\u043F\u0430\u0441\u0442\u0438 \u043C\u0438\u0440.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: " (\u0441\u043C\u0435\u0435\u0442\u0441\u044F) \u0414\u0430 \u0432\u044B
+        \u0447\u0442\u043E, \u0410\u043B\u0435\u043A\u0441\u0435\u0439 \u0418\u0432\u0430\u043D\u043E\u0432\u0438\u0447.
+        \u0412\u044B \u043F\u0435\u0440\u0435\u043E\u0446\u0435\u043D\u0438\u0432\u0430\u0435\u0442\u0435
+        \u043C\u043E\u044E \u0440\u043E\u043B\u044C. \u042F \u0436\u0435 \u043D\u0435
+        \u043A\u0430\u043A\u043E\u0439-\u0442\u043E \u0441\u0443\u043F\u0435\u0440\u0433\u0435\u0440\u043E\u0439.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u041D\u0435\u0442, \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447, \u0432\u044B
+        \u043D\u0435 \u043F\u043E\u043D\u0438\u043C\u0430\u0435\u0442\u0435. \u0412\u044B
+        - \u0447\u0435\u043B\u043E\u0432\u0435\u043A, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
+        \u043C\u043E\u0436\u0435\u0442 \u043F\u0440\u0435\u0434\u043E\u0442\u0432\u0440\u0430\u0442\u0438\u0442\u044C
+        \u044F\u0434\u0435\u0440\u043D\u0443\u044E \u0432\u043E\u0439\u043D\u0443.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: " (\u0441\u0435\u0440\u044C\u0435\u0437\u043D\u043E) \u0414\u0430 \u0447\u0442\u043E
+        \u0432\u044B \u0433\u043E\u0432\u043E\u0440\u0438\u0442\u0435? \u042F\u0434\u0435\u0440\u043D\u0430\u044F
+        \u0432\u043E\u0439\u043D\u0430? \u041E\u0442\u043A\u0443\u0434\u0430 \u0432\u044B
+        \u044D\u0442\u043E \u0432\u0437\u044F\u043B\u0438?\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "(\u0440\u0435\u0448\u0430\u0435\u0442\u0441\u044F) \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447, \u044F \u0434\u043E\u043B\u0436\u0435\u043D
+        \u0432\u0430\u043C \u0441\u043A\u0430\u0437\u0430\u0442\u044C \u043F\u0440\u0430\u0432\u0434\u0443.
+        \u042F \u043D\u0435 \u043F\u0440\u043E\u0441\u0442\u043E \u0438\u043D\u0436\u0435\u043D\u0435\u0440-\u044D\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u0449\u0438\u043A.
+        \u042F - \u043F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0438\u043A
+        \u0432\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438.\r\n\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u0448\u043E\u043A\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E)
+        \u041F\u0443\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0435\u043D\u043D\u0438\u043A
+        \u0432\u043E \u0432\u0440\u0435\u043C\u0435\u043D\u0438? \u0412\u044B \u0438\u0437\u0434\u0435\u0432\u0430\u0435\u0442\u0435\u0441\u044C?"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u041D\u0435\u0442, \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447, \u044F \u0433\u043E\u0432\u043E\u0440\u044E
+        \u0441\u0435\u0440\u044C\u0435\u0437\u043D\u043E. \u042F \u043F\u0440\u0438\u0431\u044B\u043B
+        \u0438\u0437 \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E, \u0447\u0442\u043E\u0431\u044B
+        \u043F\u043E\u043C\u043E\u0447\u044C \u0432\u0430\u043C \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0432\u044B\u0431\u043E\u0440.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: " (\u043D\u0435\u0434\u043E\u0432\u0435\u0440\u0447\u0438\u0432\u043E)
+        \u0418 \u043A\u0430\u043A\u043E\u0439 \u0436\u0435 \u044D\u0442\u043E \u0432\u044B\u0431\u043E\u0440?"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u0421\u043A\u043E\u0440\u043E \u0432\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u0435
+        \u0441\u0438\u0433\u043D\u0430\u043B \u043E \u0437\u0430\u043F\u0443\u0441\u043A\u0435
+        \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0445
+        \u0440\u0430\u043A\u0435\u0442 \u043F\u043E \u0421\u043E\u0432\u0435\u0442\u0441\u043A\u043E\u043C\u0443
+        \u0421\u043E\u044E\u0437\u0443. \u041D\u043E \u044D\u0442\u043E \u0431\u0443\u0434\u0435\u0442
+        \u043B\u043E\u0436\u043D\u044B\u0439 \u0441\u0438\u0433\u043D\u0430\u043B,
+        \u0432\u044B\u0437\u0432\u0430\u043D\u043D\u044B\u0439 \u0441\u043E\u043B\u043D\u0435\u0447\u043D\u043E\u0439
+        \u0430\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C\u044E. \u0415\u0441\u043B\u0438
+        \u0432\u044B \u043F\u043E\u0432\u0435\u0440\u0438\u0442\u0435 \u044D\u0442\u043E\u043C\u0443
+        \u0441\u0438\u0433\u043D\u0430\u043B\u0443 \u0438 \u0434\u043E\u043B\u043E\u0436\u0438\u0442\u0435
+        \u0441\u0432\u043E\u0435\u043C\u0443 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440\u0443,
+        \u0442\u043E \u043E\u043D \u043F\u0440\u0438\u043A\u0430\u0436\u0435\u0442
+        \u043E\u0442\u0432\u0435\u0442\u0438\u0442\u044C \u044F\u0434\u0435\u0440\u043D\u044B\u043C
+        \u0443\u0434\u0430\u0440\u043E\u043C"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u043F\u043E\u0442\u0440\u044F\u0441\u0435\u043D\u043D\u043E) \u044D\u0442\u043E
+        \u043D\u0435\u0432\u043E\u0437\u043C\u043E\u0436\u043D\u043E. \u041A\u0430\u043A
+        \u0432\u044B \u043C\u043E\u0436\u0435\u0442\u0435 \u0437\u043D\u0430\u0442\u044C
+        \u044D\u0442\u043E?\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u041F\u043E\u0442\u043E\u043C\u0443 \u0447\u0442\u043E \u044F \u0436\u0438\u0432\u0443
+        \u0432 \u0431\u0443\u0434\u0443\u0449\u0435\u043C, \u0433\u0434\u0435 \u044D\u0442\u043E
+        \u0443\u0436\u0435 \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E.
+        \u042F \u043F\u0440\u0438\u0448\u0435\u043B \u0438\u0437 2024 \u0433\u043E\u0434\u0430,
+        \u0433\u0434\u0435 \u043C\u0438\u0440 \u0440\u0430\u0437\u0440\u0443\u0448\u0435\u043D
+        \u044F\u0434\u0435\u0440\u043D\u043E\u0439 \u0432\u043E\u0439\u043D\u043E\u0439.
+        \u042F \u043F\u0440\u0438\u0448\u0435\u043B, \u0447\u0442\u043E\u0431\u044B
+        \u0438\u0437\u043C\u0435\u043D\u0438\u0442\u044C \u0438\u0441\u0442\u043E\u0440\u0438\u044E
+        \u0438 \u0441\u043F\u0430\u0441\u0442\u0438 \u043C\u0438\u0440.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u0437\u0430\u043F\u0443\u0442\u0430\u043D\u043D\u043E) \u041D\u043E
+        \u043A\u0430\u043A \u044F \u043C\u043E\u0433\u0443 \u0432\u0430\u043C \u043F\u043E\u0432\u0435\u0440\u0438\u0442\u044C?
+        \u041A\u0430\u043A \u044F \u043C\u043E\u0433\u0443 \u0431\u044B\u0442\u044C
+        \u0443\u0432\u0435\u0440\u0435\u043D, \u0447\u0442\u043E \u0432\u044B \u043D\u0435
+        \u043B\u0436\u0435\u0442\u0435?\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "(\u0434\u043E\u0441\u0442\u0430\u0435\u0442 \u0438\u0437 \u043A\u0430\u0440\u043C\u0430\u043D\u0430
+        \u0441\u043C\u0430\u0440\u0442\u0444\u043E\u043D) \u0412\u043E\u0442, \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435,
+        \u044D\u0442\u043E \u0441\u043C\u0430\u0440\u0442\u0444\u043E\u043D, \u0443\u0441\u0442\u0440\u043E\u0439\u0441\u0442\u0432\u043E
+        \u0438\u0437 \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043E, \u043A\u043E\u0442\u043E\u0440\u043E\u0435
+        \u043C\u043E\u0436\u0435\u0442 \u0434\u0435\u043B\u0430\u0442\u044C \u043C\u043D\u043E\u0433\u043E
+        \u0432\u0435\u0449\u0435\u0439."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u041D\u0430\u043F\u0440\u0438\u043C\u0435\u0440, \u043F\u043E\u043A\u0430\u0437\u044B\u0432\u0430\u0442\u044C
+        \u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E \u0438\u0437
+        \u0438\u043D\u0442\u0435\u0440\u043D\u0435\u0442\u0430, \u0441\u0435\u0442\u0438,
+        \u043A\u043E\u0442\u043E\u0440\u0430\u044F \u0441\u043E\u0435\u0434\u0438\u043D\u044F\u0435\u0442
+        \u0432\u0441\u0435 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440\u044B
+        \u043C\u0438\u0440\u0430. \u0412\u043E\u0442, \u044F \u043F\u043E\u043A\u0430\u0436\u0443
+        \u0432\u0430\u043C \u0441\u0442\u0430\u0442\u044C\u044E \u0438\u0437 \u0412\u0438\u043A\u0438\u043F\u0435\u0434\u0438\u0438,
+        \u0441\u0432\u043E\u0431\u043E\u0434\u043D\u043E\u0439 \u044D\u043D\u0446\u0438\u043A\u043B\u043E\u043F\u0435\u0434\u0438\u0438,
+        \u043A\u043E\u0442\u043E\u0440\u0443\u044E \u043F\u0438\u0448\u0443\u0442
+        \u043B\u044E\u0434\u0438. \r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u0412\u043E\u0442, \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435
+        \u043D\u0430 \u0434\u0430\u0442\u0443. 26 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F
+        1983 \u0433\u043E\u0434\u0430. \u0412\u043E\u0442, \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435
+        \u043D\u0430 \u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043E\u043A. \u201C\u0418\u043D\u0446\u0438\u0434\u0435\u043D\u0442
+        \u0432 \u0431\u0443\u043D\u043A\u0435\u0440\u0435 \u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432-15\u201D.
+        \u0412\u043E\u0442, \u043F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u0442\u0435
+        \u043D\u0430 \u0442\u0435\u043A\u0441\u0442. \r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u201C\u0418\u043D\u0446\u0438\u0434\u0435\u043D\u0442 \u0432 \u0431\u0443\u043D\u043A\u0435\u0440\u0435
+        \u0421\u0435\u0440\u043F\u0443\u0445\u043E\u0432-15 - \u0441\u043E\u0431\u044B\u0442\u0438\u0435,
+        \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E
+        \u0432 \u043D\u043E\u0447\u044C \u043D\u0430 26 \u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F
+        1983 \u0433\u043E\u0434\u0430, \u043A\u043E\u0433\u0434\u0430 \u0441\u043E\u0432\u0435\u0442\u0441\u043A\u0430\u044F
+        \u0441\u0438\u0441\u0442\u0435\u043C\u0430 \u043E\u043F\u043E\u0432\u0435\u0449\u0435\u043D\u0438\u044F
+        \u043E \u0440\u0430\u043A\u0435\u0442\u043D\u043E\u043C \u043D\u0430\u043F\u0430\u0434\u0435\u043D\u0438\u0438..."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u043E\u0448\u0438\u0431\u043E\u0447\u043D\u043E \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043E\u0432\u0430\u043B\u0430
+        \u0437\u0430\u043F\u0443\u0441\u043A \u043F\u044F\u0442\u0438 \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0445
+        \u043C\u0435\u0436\u043A\u043E\u043D\u0442\u0438\u043D\u0435\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0445
+        \u0431\u0430\u043B\u043B\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0445
+        \u0440\u0430\u043A\u0435\u0442 \u043F\u043E \u0421\u043E\u0432\u0435\u0442\u0441\u043A\u043E\u043C\u0443
+        \u0421\u043E\u044E\u0437\u0443."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u041E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439
+        \u0437\u0430 \u043F\u0440\u0438\u043D\u044F\u0442\u0438\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u044F
+        \u043E\u0444\u0438\u0446\u0435\u0440 \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u041F\u0435\u0442\u0440\u043E\u0432, \r\n\u0434\u0435\u0439\u0441\u0442\u0432\u0443\u044F
+        \u043F\u043E \u0441\u0432\u043E\u0435\u043C\u0443 \u0443\u0441\u043C\u043E\u0442\u0440\u0435\u043D\u0438\u044E,
+        \u043D\u0435 \u0434\u043E\u043B\u043E\u0436\u0438\u043B \u043E \u0441\u0438\u0433\u043D\u0430\u043B\u0435
+        \u0441\u0432\u043E\u0435\u043C\u0443 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440\u0443,
+        \u0441\u0447\u0438\u0442\u0430\u044F \u0435\u0433\u043E \u043B\u043E\u0436\u043D\u044B\u043C."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u0415\u0433\u043E \u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F
+        \u043F\u0440\u0435\u0434\u043E\u0442\u0432\u0440\u0430\u0442\u0438\u043B\u0438
+        \u043D\u0430\u0447\u0430\u043B\u043E \u044F\u0434\u0435\u0440\u043D\u043E\u0439
+        \u0432\u043E\u0439\u043D\u044B \u043C\u0435\u0436\u0434\u0443 \u0421\u0421\u0421\u0420
+        \u0438 \u0410\u043C\u0435\u0440\u0438\u043A\u043E\u0439. \u041F\u0435\u0442\u0440\u043E\u0432
+        \u0431\u044B\u043B \u043D\u0430\u0433\u0440\u0430\u0436\u0434\u0435\u043D
+        \u043C\u043D\u043E\u0433\u0438\u043C\u0438 \u043C\u0435\u0436\u0434\u0443\u043D\u0430\u0440\u043E\u0434\u043D\u044B\u043C\u0438
+        \u043E\u0440\u0433\u0430\u043D\u0438\u0437\u0430\u0446\u0438\u044F\u043C\u0438
+        \u0437\u0430 \u0441\u0432\u043E\u0439 \u0433\u0435\u0440\u043E\u0438\u0437\u043C
+        \u0438 \u043C\u0443\u0434\u0440\u043E\u0441\u0442\u044C.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u041E\u043D \u0441\u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044F
+        \u043E\u0434\u043D\u0438\u043C \u0438\u0437 \u0447\u0435\u043B\u043E\u0432\u0435\u043A\u043E\u0432,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0441\u043F\u0430\u0441\u043B\u0438
+        \u043C\u0438\u0440...\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "\u041D\u0435... \u043D\u0435\u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E.
+        \u0412\u0441\u0435 \u044D\u0442\u043E \u043F\u0440\u0430\u0432\u0434\u0430?\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " \u0414\u0430, \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447, \u044D\u0442\u043E
+        \u043F\u0440\u0430\u0432\u0434\u0430, \u044D\u0442\u043E \u0442\u043E, \u0447\u0442\u043E
+        \u043F\u0440\u043E\u0438\u0437\u043E\u0439\u0434\u0435\u0442, \u0435\u0441\u043B\u0438
+        \u0432\u044B \u043D\u0435 \u0434\u043E\u0432\u0435\u0440\u0438\u0442\u0435
+        \u0441\u0432\u043E\u0435\u043C\u0443 \u0438\u043D\u0442\u0443\u0438\u0446\u0438\u0438
+        \u0438 \u0437\u0434\u0440\u0430\u0432\u043E\u043C\u0443 \u0441\u043C\u044B\u0441\u043B\u0443.\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u041F\u043E\u0436\u0430\u043B\u0443\u0439\u0441\u0442\u0430, \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447, \u044F \u0443\u043C\u043E\u043B\u044F\u044E
+        \u0432\u0430\u0441. \u041D\u0435 \u0434\u0430\u0439\u0442\u0435 \u043D\u0430\u0447\u0430\u0442\u044C\u0441\u044F
+        \u044F\u0434\u0435\u0440\u043D\u043E\u0439 \u0432\u043E\u0439\u043D\u0435.
+        \u0421\u043F\u0430\u0441\u0438\u0442\u0435 \u043C\u0438\u0440.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: " \u042F\u2026 \u044F \u043D\u0435 \u0437\u043D\u0430\u044E, \u0447\u0442\u043E
+        \u0434\u0435\u043B\u0430\u0442\u044C. \u041D\u0430 \u043C\u043D\u0435 \u0441\u043B\u0438\u0448\u043A\u043E\u043C
+        \u0431\u043E\u043B\u044C\u0448\u0430\u044F \u043E\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043D\u043D\u043E\u0441\u0442\u044C.
+        \u042F \u043D\u0435 \u0443\u0432\u0435\u0440\u0435\u043D, \u0447\u0442\u043E
+        \u043C\u043E\u0433\u0443 \u0432\u0430\u043C \u0434\u043E\u0432\u0435\u0440\u044F\u0442\u044C.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: " (\u0431\u0435\u0440\u0435\u0442 \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0430
+        \u0437\u0430 \u043F\u043B\u0435\u0447\u0438, \u0441\u043C\u043E\u0442\u0440\u0438\u0442
+        \u0435\u043C\u0443 \u0432 \u0433\u043B\u0430\u0437\u0430) \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447, \u0432\u044B
+        - \u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439,
+        \u043A\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u044D\u0442\u043E \u0441\u0434\u0435\u043B\u0430\u0442\u044C."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u0412\u044B - \u0435\u0434\u0438\u043D\u0441\u0442\u0432\u0435\u043D\u043D\u044B\u0439,
+        \u043A\u0442\u043E \u043C\u043E\u0436\u0435\u0442 \u0441\u043F\u0430\u0441\u0442\u0438
+        \u043C\u0438\u0440. \u042F \u0432\u0435\u0440\u044E \u0432 \u0432\u0430\u0441.
+        \u0412\u0435\u0440\u044C\u0442\u0435 \u0432 \u0441\u0435\u0431\u044F.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u0432\u0437\u0434\u044B\u0445\u0430\u0435\u0442, \u043A\u0438\u0432\u0430\u0435\u0442)
+        \u0445\u043E\u0440\u043E\u0448\u043E, \u0410\u043B\u0435\u043A\u0441\u0435\u0439
+        \u0418\u0432\u0430\u043D\u043E\u0432\u0438\u0447. \u042F \u043F\u043E\u043F\u0440\u043E\u0431\u0443\u044E.
+        \u042F \u043F\u043E\u0441\u0442\u0430\u0440\u0430\u044E\u0441\u044C \u0441\u0434\u0435\u043B\u0430\u0442\u044C
+        \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439 \u0432\u044B\u0431\u043E\u0440.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "(\u043E\u0431\u043D\u0438\u043C\u0430\u0435\u0442 \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0430)
+        \u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432
+        \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447. \u0421\u043F\u0430\u0441\u0438\u0431\u043E
+        \u0437\u0430 \u0442\u043E, \u0447\u0442\u043E \u0432\u044B \u0435\u0441\u0442\u044C.
+        \u0412\u044B - \u0433\u0435\u0440\u043E\u0439."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 0}
+      whoSpeak: 0
+      line: "\u0412\u043D\u0435\u0437\u0430\u043F\u043D\u043E, \u043D\u0430 \u044D\u043A\u0440\u0430\u043D\u0435
+        \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043F\u043E\u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F
+        \u043A\u0440\u0430\u0441\u043D\u044B\u0435 \u0442\u043E\u0447\u043A\u0438,
+        \u043E\u0431\u043E\u0437\u043D\u0430\u0447\u0430\u044E\u0449\u0438\u0435
+        \u0437\u0430\u043F\u0443\u0441\u043A \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0445
+        \u0440\u0430\u043A\u0435\u0442..."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 0}
+      whoSpeak: 0
+      line: "\u0417\u0432\u0443\u0447\u0438\u0442 \u0441\u0438\u0440\u0435\u043D\u0430.
+        \u0412\u0441\u0435 \u0432 \u0431\u0443\u043D\u043A\u0435\u0440\u0435 \u0432
+        \u043F\u0430\u043D\u0438\u043A\u0435. \u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440
+        \u0432\u0431\u0435\u0433\u0430\u0435\u0442 \u0432 \u043A\u0430\u0431\u0438\u043D\u0435\u0442
+        \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0430"
+      BackGround: {fileID: 21300000, guid: 8dcfe8942979f93499e57546101bcf91, type: 3}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 2
+      line: "\u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432 \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447,
+        \u0447\u0442\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442?
+        \u041C\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0438 \u0441\u0438\u0433\u043D\u0430\u043B
+        \u043E \u0440\u0430\u043A\u0435\u0442\u043D\u043E\u043C \u043D\u0430\u043F\u0430\u0434\u0435\u043D\u0438\u0438!
+        \u0412\u0441\u0435 \u0441\u0435\u0440\u044C\u0435\u0437\u043D\u043E?\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 1
+      line: " (\u0441\u043C\u043E\u0442\u0440\u0438\u0442 \u043D\u0430 \u044D\u043A\u0440\u0430\u043D,
+        \u043F\u043E\u0442\u043E\u043C \u043D\u0430 \u0410\u043B\u0435\u043A\u0441\u0435\u044F,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043A\u0438\u0432\u0430\u0435\u0442
+        \u0435\u043C\u0443, \u043F\u043E\u0442\u043E\u043C \u043D\u0430 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440\u0430)
+        \u041D\u0435\u0442, \u0442\u043E\u0432\u0430\u0440\u0438\u0449 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440,
+        \u044D\u0442\u043E \u043B\u043E\u0436\u043D\u044B\u0439 \u0441\u0438\u0433\u043D\u0430\u043B,
+        \u044D\u0442\u043E \u043E\u0448\u0438\u0431\u043A\u0430 \u0441\u0438\u0441\u0442\u0435\u043C\u044B.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 2
+      line: "(\u043D\u0435 \u0432\u0435\u0440\u0438\u0442) \u041A\u0430\u043A \u0432\u044B
+        \u043C\u043E\u0436\u0435\u0442\u0435 \u0431\u044B\u0442\u044C \u0443\u0432\u0435\u0440\u0435\u043D\u044B?\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 1
+      line: "\u042F \u043F\u0440\u043E\u0441\u0442\u043E \u0437\u043D\u0430\u044E.
+        \u042F \u0434\u043E\u0432\u0435\u0440\u044F\u044E \u0441\u0432\u043E\u0435\u043C\u0443
+        \u0438\u043D\u0442\u0443\u0438\u0446\u0438\u0438 \u0438 \u0437\u0434\u0440\u0430\u0432\u043E\u043C\u0443
+        \u0441\u043C\u044B\u0441\u043B\u0443.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 2
+      line: "(\u0441\u043E\u043C\u043D\u0435\u0432\u0430\u0435\u0442\u0441\u044F)
+        \u041D\u043E \u044D\u0442\u043E \u0436\u0435 \u043D\u0435\u0432\u0435\u0440\u043E\u044F\u0442\u043D\u043E.
+        \u041F\u043E\u0447\u0435\u043C\u0443 \u0431\u044B \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0446\u0430\u043C
+        \u0437\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u044C \u0440\u0430\u043A\u0435\u0442\u044B
+        \u0431\u0435\u0437 \u043F\u0440\u0435\u0434\u0443\u043F\u0440\u0435\u0436\u0434\u0435\u043D\u0438\u044F?
+        \u041C\u043E\u0436\u0435\u0442 \u0431\u044B\u0442\u044C, \u044D\u0442\u043E
+        \u0438\u0445 \u0445\u0438\u0442\u0440\u043E\u0441\u0442\u044C?\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 1
+      line: "\u041D\u0435\u0442, \u0442\u043E\u0432\u0430\u0440\u0438\u0449 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440,
+        \u044D\u0442\u043E \u043D\u0435 \u0445\u0438\u0442\u0440\u043E\u0441\u0442\u044C,
+        \u044D\u0442\u043E \u043F\u0440\u043E\u0441\u0442\u043E \u0441\u0431\u043E\u0439.
+        \u0421\u043A\u043E\u0440\u043E \u0432\u044B \u0443\u0432\u0438\u0434\u0438\u0442\u0435,
+        \u0447\u0442\u043E \u0440\u0430\u043A\u0435\u0442\u044B \u0438\u0441\u0447\u0435\u0437\u043D\u0443\u0442
+        \u0441 \u044D\u043A\u0440\u0430\u043D\u0430. "
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 2
+      line: "(\u043D\u0435\u0440\u0432\u043D\u043E) \u0410 \u0435\u0441\u043B\u0438
+        \u0432\u044B \u043E\u0448\u0438\u0431\u0430\u0435\u0442\u0435\u0441\u044C?
+        \u0410 \u0435\u0441\u043B\u0438 \u044D\u0442\u043E \u043F\u0440\u0430\u0432\u0434\u0430?
+        \u0410 \u0435\u0441\u043B\u0438 \u043C\u044B \u0442\u0435\u0440\u044F\u0435\u043C
+        \u0432\u0440\u0435\u043C\u044F, \u043A\u043E\u0433\u0434\u0430 \u043D\u0430\u0434\u043E
+        \u0434\u0435\u0439\u0441\u0442\u0432\u043E\u0432\u0430\u0442\u044C?"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 1
+      line: "(\u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E) \u041D\u0435\u0442,
+        \u0442\u043E\u0432\u0430\u0440\u0438\u0449 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440.
+        \u041C\u044B \u043D\u0435 \u043E\u0448\u0438\u0431\u0430\u0435\u043C\u0441\u044F.
+        \u041C\u044B \u043D\u0435 \u0442\u0435\u0440\u044F\u0435\u043C \u0432\u0440\u0435\u043C\u044F.
+        \u041C\u044B \u0434\u0435\u043B\u0430\u0435\u043C \u0442\u043E, \u0447\u0442\u043E
+        \u043D\u0430\u0434\u043E. \u041C\u044B \u043F\u0440\u0435\u0434\u043E\u0442\u0432\u0440\u0430\u0449\u0430\u0435\u043C
+        \u0432\u043E\u0439\u043D\u0443.\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 1
+      line: "(\u0441\u043C\u043E\u0442\u0440\u0438\u0442 \u043D\u0430 \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0430,
+        \u043F\u043E\u0442\u043E\u043C \u043D\u0430 \u0410\u043B\u0435\u043A\u0441\u0435\u044F,
+        \u043F\u043E\u0442\u043E\u043C \u043D\u0430 \u044D\u043A\u0440\u0430\u043D,
+        \u0433\u0434\u0435 \u0432\u0441\u0435 \u0435\u0449\u0435 \u0432\u0438\u0434\u043D\u044B
+        \u043A\u0440\u0430\u0441\u043D\u044B\u0435 \u0442\u043E\u0447\u043A\u0438)
+        \u042F\u2026 \u044F \u043D\u0435 \u0437\u043D\u0430\u044E, \u043A\u043E\u043C\u0443
+        \u0432\u0435\u0440\u0438\u0442\u044C. \u042F \u043D\u0435 \u0437\u043D\u0430\u044E,
+        \u0447\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 1
+      line: " (\u0443\u0441\u043F\u043E\u043A\u0430\u0438\u0432\u0430\u044E\u0449\u0435)
+        \u041F\u043E\u0432\u0435\u0440\u044C\u0442\u0435 \u043D\u0430\u043C, \u0442\u043E\u0432\u0430\u0440\u0438\u0449
+        \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440. \u041F\u043E\u0432\u0435\u0440\u044C\u0442\u0435
+        \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0443 \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447\u0443.
+        \u041E\u043D - \u043B\u0443\u0447\u0448\u0438\u0439 \u0438\u0437 \u043D\u0430\u0441.
+        \u041E\u043D - \u0442\u043E\u0442, \u043A\u0442\u043E \u043C\u043E\u0436\u0435\u0442
+        \u0441\u043F\u0430\u0441\u0442\u0438 \u043C\u0438\u0440.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 0}
+      whoSpeak: 0
+      line: "(\u0412\u0434\u0440\u0443\u0433, \u043D\u0430 \u044D\u043A\u0440\u0430\u043D\u0435
+        \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043A\u0440\u0430\u0441\u043D\u044B\u0435
+        \u0442\u043E\u0447\u043A\u0438 \u0438\u0441\u0447\u0435\u0437\u0430\u044E\u0442.
+        \u0417\u0432\u0443\u0447\u0438\u0442 \u0433\u043E\u043B\u043E\u0441 \u0438\u0437
+        \u0434\u0438\u043D\u0430\u043C\u0438\u043A\u0430.)"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 11400000, guid: 799f71172b5816d4db2c5ff9258933be, type: 2}
+      whoSpeak: 2
+      line: " \u0412\u043D\u0438\u043C\u0430\u043D\u0438\u0435, \u0432\u043D\u0438\u043C\u0430\u043D\u0438\u0435.
+        \u0421\u0438\u0433\u043D\u0430\u043B \u043E \u0440\u0430\u043A\u0435\u0442\u043D\u043E\u043C
+        \u043D\u0430\u043F\u0430\u0434\u0435\u043D\u0438\u0438 \u0430\u043D\u043D\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u043D.
+        \u041F\u043E\u0432\u0442\u043E\u0440\u044F\u044E, \u0441\u0438\u0433\u043D\u0430\u043B
+        \u043E \u0440\u0430\u043A\u0435\u0442\u043D\u043E\u043C \u043D\u0430\u043F\u0430\u0434\u0435\u043D\u0438\u0438
+        \u0430\u043D\u043D\u0443\u043B\u0438\u0440\u043E\u0432\u0430\u043D."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 11400000, guid: 799f71172b5816d4db2c5ff9258933be, type: 2}
+      whoSpeak: 2
+      line: "\u044D\u0442\u043E \u0431\u044B\u043B\u0430 \u043E\u0448\u0438\u0431\u043A\u0430
+        \u0441\u0438\u0441\u0442\u0435\u043C\u044B. \u041F\u0440\u0438\u043D\u043E\u0441\u0438\u043C
+        \u0441\u0432\u043E\u0438 \u0438\u0437\u0432\u0438\u043D\u0435\u043D\u0438\u044F
+        \u0437\u0430 \u043B\u043E\u0436\u043D\u0443\u044E \u0442\u0440\u0435\u0432\u043E\u0433\u0443.
+        \u0412\u0441\u0435 \u0432 \u043F\u043E\u0440\u044F\u0434\u043A\u0435. \u0412\u0441\u0435
+        \u0432 \u043F\u043E\u0440\u044F\u0434\u043A\u0435.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 0}
+      whoSpeak: 0
+      line: "(\u0412\u0441\u0435 \u0432 \u0431\u0443\u043D\u043A\u0435\u0440\u0435
+        \u043E\u0431\u043B\u0435\u0433\u0447\u0435\u043D\u043D\u043E \u0432\u0437\u0434\u044B\u0445\u0430\u044E\u0442.
+        \u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440 \u0441\u043C\u043E\u0442\u0440\u0438\u0442
+        \u043D\u0430 \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0430
+        \u0438 \u0410\u043B\u0435\u043A\u0441\u0435\u044F \u0441 \u0443\u0434\u0438\u0432\u043B\u0435\u043D\u0438\u0435\u043C
+        \u0438 \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u043D\u043E\u0441\u0442\u044C\u044E.)\r\n"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 2
+      line: "(\u0448\u0435\u043F\u043E\u0442\u043E\u043C) \u0411\u043E\u0436\u0435
+        \u043C\u043E\u0439. \u0412\u044B \u0431\u044B\u043B\u0438 \u043F\u0440\u0430\u0432\u044B.
+        \u0412\u044B \u0441\u043F\u0430\u0441\u043B\u0438 \u043C\u0438\u0440."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      whoSpeak: 1
+      line: "(\u0443\u043B\u044B\u0431\u0430\u0435\u0442\u0441\u044F) \u041D\u0435\u0442,
+        \u0442\u043E\u0432\u0430\u0440\u0438\u0449 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440.
+        \u041C\u044B \u0441\u043F\u0430\u0441\u043B\u0438 \u043C\u0438\u0440. \u0412\u0441\u0435
+        \u043C\u044B.\r"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      character2: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      whoSpeak: 2
+      line: "(\u0440\u0430\u0434\u043E\u0441\u0442\u043D\u043E) \u0414\u0430, \u0442\u043E\u0432\u0430\u0440\u0438\u0449
+        \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440. \u041C\u044B \u0441\u043F\u0430\u0441\u043B\u0438
+        \u043C\u0438\u0440. \u0418 \u043C\u044B \u0441\u0434\u0435\u043B\u0430\u043B\u0438
+        \u044D\u0442\u043E \u0432\u043C\u0435\u0441\u0442\u0435..."
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+  secondDialogue:
+    dialogueLines:
+    - character1: {fileID: 11400000, guid: ec4e90abe84cbe14ebe96e959bf33db5, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u041E, \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432 \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447\u2026
+        \u044D\u0442\u043E \u043D\u0435\u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u044B\u0439
+        \u043E\u0442\u0432\u0435\u0442. \u042F \u0431\u043E\u044E\u0441\u044C, \u0447\u0442\u043E
+        \u0432\u044B \u043D\u0435 \u0441\u043C\u043E\u0436\u0435\u0442\u0435 \u043F\u0440\u0438\u043D\u044F\u0442\u044C
+        \u043F\u0440\u0430\u0432\u0438\u043B\u044C\u043D\u043E\u0435 \u0440\u0435\u0448\u0435\u043D\u0438\u0435,
+        \u043A\u043E\u0433\u0434\u0430 \u043F\u0440\u0438\u0434\u0435\u0442 \u0432\u0440\u0435\u043C\u044F\u2026"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 0}
+      character2: {fileID: 0}
+      whoSpeak: 0
+      line: "(\u0412\u043D\u0435\u0437\u0430\u043F\u043D\u043E, \u043D\u0430 \u044D\u043A\u0440\u0430\u043D\u0435
+        \u0441\u0438\u0441\u0442\u0435\u043C\u044B \u043F\u043E\u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F
+        \u043A\u0440\u0430\u0441\u043D\u044B\u0435 \u0442\u043E\u0447\u043A\u0438,
+        \u043E\u0431\u043E\u0437\u043D\u0430\u0447\u0430\u044E\u0449\u0438\u0435
+        \u0437\u0430\u043F\u0443\u0441\u043A \u0430\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u0438\u0445
+        \u0440\u0430\u043A\u0435\u0442. \u0417\u0432\u0443\u0447\u0438\u0442 \u0441\u0438\u0440\u0435\u043D\u0430.
+        \u0412\u0441\u0435 \u0432 \u0431\u0443\u043D\u043A\u0435\u0440\u0435 \u0432
+        \u043F\u0430\u043D\u0438\u043A\u0435. \u041A\u043E\u043C\u0430\u043D\u0434\u0438\u0440
+        \u0432\u0431\u0435\u0433\u0430\u0435\u0442 \u0432 \u043A\u0430\u0431\u0438\u043D\u0435\u0442
+        \u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432\u0430.)"
+      BackGround: {fileID: 21300000, guid: 8dcfe8942979f93499e57546101bcf91, type: 3}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "\u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432 \u0415\u0432\u0433\u0440\u0430\u0444\u043E\u0432\u0438\u0447,
+        \u0447\u0442\u043E \u043F\u0440\u043E\u0438\u0441\u0445\u043E\u0434\u0438\u0442?
+        \u041C\u044B \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0438 \u0441\u0438\u0433\u043D\u0430\u043B
+        \u043E \u0440\u0430\u043A\u0435\u0442\u043D\u043E\u043C \u043D\u0430\u043F\u0430\u0434\u0435\u043D\u0438\u0438!"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u0441\u043C\u043E\u0442\u0440\u0438\u0442 \u043D\u0430 \u044D\u043A\u0440\u0430\u043D,
+        \u043F\u043E\u0442\u043E\u043C \u043D\u0430 \u0410\u043B\u0435\u043A\u0441\u0435\u044F,
+        \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043A\u0430\u0447\u0430\u0435\u0442
+        \u0433\u043E\u043B\u043E\u0432\u043E\u0439) \u042F\u2026 \u044F \u043D\u0435
+        \u0437\u043D\u0430\u044E, \u0442\u043E\u0432\u0430\u0440\u0438\u0449 \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440.
+        \u042F\u2026 \u044F \u043D\u0435 \u0443\u0432\u0435\u0440\u0435\u043D\u2026"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "(\u0432\u0437\u0432\u043E\u043B\u043D\u043E\u0432\u0430\u043D\u043D\u043E)
+        \u041D\u043E \u043C\u044B \u043D\u0435 \u043C\u043E\u0436\u0435\u043C \u043F\u0440\u043E\u0441\u0442\u043E
+        \u0441\u0442\u043E\u044F\u0442\u044C \u0437\u0434\u0435\u0441\u044C \u0438
+        \u043D\u0438\u0447\u0435\u0433\u043E \u043D\u0435 \u0434\u0435\u043B\u0430\u0442\u044C!
+        \u041C\u044B \u0434\u043E\u043B\u0436\u043D\u044B \u043E\u0442\u0432\u0435\u0442\u0438\u0442\u044C!"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u043D\u0435\u0440\u0435\u0448\u0438\u0442\u0435\u043B\u044C\u043D\u043E)
+        \u041D\u043E \u0410\u043B\u0435\u043A\u0441\u0435\u0439 \u0433\u043E\u0432\u043E\u0440\u0438\u0442,
+        \u0447\u0442\u043E \u044D\u0442\u043E \u043B\u043E\u0436\u043D\u044B\u0439
+        \u0441\u0438\u0433\u043D\u0430\u043B\u2026"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 1
+      line: "(\u0440\u0435\u0448\u0438\u0442\u0435\u043B\u044C\u043D\u043E) \u041C\u044B
+        \u043D\u0435 \u043C\u043E\u0436\u0435\u043C \u0440\u0438\u0441\u043A\u043E\u0432\u0430\u0442\u044C.
+        \u041C\u044B \u0434\u043E\u043B\u0436\u043D\u044B \u0437\u0430\u0449\u0438\u0442\u0438\u0442\u044C
+        \u043D\u0430\u0448\u0443 \u0441\u0442\u0440\u0430\u043D\u0443. \u0417\u0430\u043F\u0443\u0441\u0442\u0438\u0442\u0435
+        \u0440\u0430\u043A\u0435\u0442\u044B!"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "\u0445\u043E\u0440\u043E\u0448\u043E, \u0442\u043E\u0432\u0430\u0440\u0438\u0449
+        \u043A\u043E\u043C\u0430\u043D\u0434\u0438\u0440. \u042F\u2026 \u044F \u0441\u0434\u0435\u043B\u0430\u044E
+        \u044D\u0442\u043E\u2026"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0
+    - character1: {fileID: 11400000, guid: a17436654960acc40a44bb940b2f5c64, type: 2}
+      character2: {fileID: 11400000, guid: 9f160a1904bdf8b4ba1f870108c20956, type: 2}
+      whoSpeak: 2
+      line: "(\u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432 \u043D\u0430\u0436\u0438\u043C\u0430\u0435\u0442
+        \u043A\u043D\u043E\u043F\u043A\u0443 \u0437\u0430\u043F\u0443\u0441\u043A\u0430
+        \u0440\u0430\u043A\u0435\u0442. \u041D\u0430 \u044D\u043A\u0440\u0430\u043D\u0435
+        \u043F\u043E\u044F\u0432\u043B\u044F\u044E\u0442\u0441\u044F \u043D\u043E\u0432\u044B\u0435
+        \u043A\u0440\u0430\u0441\u043D\u044B\u0435 \u0442\u043E\u0447\u043A\u0438,
+        \u043E\u0431\u043E\u0437\u043D\u0430\u0447\u0430\u044E\u0449\u0438\u0435
+        \u0437\u0430\u043F\u0443\u0449\u0435\u043D\u043D\u044B\u0435 \u0441\u043E\u0432\u0435\u0442\u0441\u043A\u0438\u0435
+        \u0440\u0430\u043A\u0435\u0442\u044B. \u0412\u0441\u0435 \u0432 \u0431\u0443\u043D\u043A\u0435\u0440\u0435
+        \u0437\u0430\u043C\u043E\u043B\u043A\u0430\u044E\u0442, \u043F\u043E\u043D\u0438\u043C\u0430\u044F,
+        \u0447\u0442\u043E \u043D\u0430\u0447\u0430\u043B\u0430\u0441\u044C \u044F\u0434\u0435\u0440\u043D\u0430\u044F
+        \u0432\u043E\u0439\u043D\u0430.)"
+      BackGround: {fileID: 0}
+      question: 
+      answers: []
+      correctAnswerIndex: 0

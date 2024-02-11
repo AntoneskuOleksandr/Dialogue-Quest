@@ -2003,7 +2003,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: EXIT
+  m_text: MENU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1bdbc4fc685b05e4da5caf03ed15ca49, type: 2}
   m_sharedMaterial: {fileID: 3828498413277200818, guid: 1bdbc4fc685b05e4da5caf03ed15ca49, type: 2}
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 97
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1

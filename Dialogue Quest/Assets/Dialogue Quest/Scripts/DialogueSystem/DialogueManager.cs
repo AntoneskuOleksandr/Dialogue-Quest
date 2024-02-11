@@ -11,12 +11,17 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] private Image character1Icon;
     [SerializeField] private Image character2Icon;
+    [SerializeField] private Button answerButton1;
+    [SerializeField] private Button answerButton2;
+    [SerializeField] private Button continueButton;
+    [SerializeField] private Button questMenuButton;
     [SerializeField] private TextMeshProUGUI character1Name;
     [SerializeField] private TextMeshProUGUI character2Name;
     [SerializeField] private Animator character1Animator;
     [SerializeField] private Animator character2Animator;
     [SerializeField] private TextMeshProUGUI dialogueArea;
     [SerializeField] private BackGroundManager backGroundManager;
+    [SerializeField] private DialogueTrigger dialogueTrigger;
 
     private Queue<DialogueLine> lines = new Queue<DialogueLine>();
 
@@ -40,6 +45,18 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        dialogueArea.text = string.Empty;
+        StartCoroutine(StartDialogueAfterDelay(1f));
+    }
+
+    private IEnumerator StartDialogueAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        StartDialogue(dialogueTrigger.dialogue);
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
         isDialogueActive = true;
@@ -52,6 +69,9 @@ public class DialogueManager : MonoBehaviour
         currentLine = lines.Dequeue();
 
         SetValuesForCharacters();
+
+        answerButton1.gameObject.SetActive(false);
+        answerButton2.gameObject.SetActive(false);
 
         StartCoroutine(TypeSentence(currentLine));
     }
@@ -76,8 +96,48 @@ public class DialogueManager : MonoBehaviour
 
             SetValuesForCharacters();
 
+            answerButton1.onClick.RemoveAllListeners();
+            answerButton2.onClick.RemoveAllListeners();
+
+            if (!string.IsNullOrEmpty(currentLine.question))
+            {
+                answerButton1.gameObject.SetActive(true);
+                answerButton2.gameObject.SetActive(true);
+
+                answerButton1.GetComponentInChildren<TMP_Text>().text = currentLine.answers[0];
+                answerButton2.GetComponentInChildren<TMP_Text>().text = currentLine.answers[1];
+
+                answerButton1.onClick.AddListener(() => OnAnswerSelected(0));
+                answerButton2.onClick.AddListener(() => OnAnswerSelected(1));
+
+                continueButton.interactable = false;
+
+                StartCoroutine(WaitAndTypeSentence(currentLine, delayBeforeTyping));
+            }
+            else
+            {
+                // ≈сли нет вопроса, продолжаем диалог как обычно
+                answerButton1.gameObject.SetActive(false);
+                answerButton2.gameObject.SetActive(false);
+
+                StopAllCoroutines();
+                StartCoroutine(WaitAndTypeSentence(currentLine, delayBeforeTyping));
+            }
+        }
+    }
+
+    public void OnAnswerSelected(int answerIndex)
+    {
+        continueButton.interactable = true;
+
+        if (answerIndex == currentLine.correctAnswerIndex)
+        {
+            DisplayNextDialogueLine();
+        }
+        else
+        {
             StopAllCoroutines();
-            StartCoroutine(WaitAndTypeSentence(currentLine, delayBeforeTyping));
+            StartDialogue(dialogueTrigger.secondDialogue);
         }
     }
 
@@ -158,7 +218,9 @@ public class DialogueManager : MonoBehaviour
 
         character1Icon.gameObject.SetActive(false);
         character2Icon.gameObject.SetActive(false);
-        dialogueArea.text = "The End";
+
+        questMenuButton.gameObject.SetActive(true);
+        this.gameObject.SetActive(false);
     }
 
     public float TryToChangeBackGround()
