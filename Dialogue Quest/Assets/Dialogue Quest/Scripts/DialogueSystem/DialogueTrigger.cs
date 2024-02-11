@@ -7,6 +7,9 @@ public class DialogueLine
 {
     public Character character1;
     public Character character2;
+
+    public int whoSpeak;
+
     [TextArea(3, 10)]
     public string line;
 }

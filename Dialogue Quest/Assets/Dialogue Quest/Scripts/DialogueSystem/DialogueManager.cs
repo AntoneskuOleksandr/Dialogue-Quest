@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public static DialogueManager Instance;
+    public static DialogueManager Instance { get; private set; }
 
     [SerializeField] private Image character1Icon;
     [SerializeField] private Image character2Icon;
     [SerializeField] private TextMeshProUGUI character1Name;
     [SerializeField] private TextMeshProUGUI character2Name;
+    [SerializeField] private Animator character1Animator;
+    [SerializeField] private Animator character2Animator;
     [SerializeField] private TextMeshProUGUI dialogueArea;
 
     private Queue<DialogueLine> lines = new Queue<DialogueLine>();
@@ -23,10 +26,16 @@ public class DialogueManager : MonoBehaviour
     private bool isTyping = false;
     private DialogueLine currentLine;
 
-    private void Start()
+    private void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -64,9 +73,7 @@ public class DialogueManager : MonoBehaviour
             currentLine = lines.Dequeue();
 
             SetValuesForCharacters();
-
             StopAllCoroutines();
-
             StartCoroutine(TypeSentence(currentLine));
         }
     }
@@ -74,37 +81,60 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
         isTyping = true;
-        dialogueArea.text = "";
+        StringBuilder sb = new StringBuilder();
+
         foreach (char letter in dialogueLine.line.ToCharArray())
         {
-            dialogueArea.text += letter;
+            sb.Append(letter);
+            dialogueArea.text = sb.ToString();
             yield return new WaitForSeconds(typingSpeed);
         }
+
         isTyping = false;
     }
 
     private void SetValuesForCharacters()
     {
-        if (currentLine.character1 != null)
-        {
-            character1Icon.gameObject.SetActive(true);
+        SetCharacterValues(currentLine.character1, character1Icon, character1Name, ref character1Animator);
+        SetCharacterValues(currentLine.character2, character2Icon, character2Name, ref character2Animator);
+        SetWhoIsSpeaking();
+    }
 
-            character1Icon.sprite = currentLine.character1.characterIcon;
-            character1Name.text = currentLine.character1.characterName;
+    private void SetCharacterValues(Character character, Image characterIcon, TextMeshProUGUI characterName, ref Animator characterAnimator)
+    {
+        if (character != null)
+        {
+            characterIcon.gameObject.SetActive(true);
+            characterIcon.sprite = character.characterIcon;
+            characterName.text = character.characterName;
+            characterAnimator = characterIcon.GetComponent<Animator>();
         }
         else
-            character1Icon.gameObject.SetActive(false);
-
-
-        if (currentLine.character2 != null)
         {
-            character2Icon.gameObject.SetActive(true);
-
-            character2Icon.sprite = currentLine.character2.characterIcon;
-            character2Name.text = currentLine.character2.characterName;
+            characterIcon.gameObject.SetActive(false);
         }
-        else
-            character2Icon.gameObject.SetActive(false);
+    }
+
+    private void SetWhoIsSpeaking()
+    {
+        switch (currentLine.whoSpeak)
+        {
+            case 0:
+                SetSpeakingState(false, false);
+                break;
+            case 1:
+                SetSpeakingState(true, false);
+                break;
+            case 2:
+                SetSpeakingState(false, true);
+                break;
+        }
+    }
+
+    private void SetSpeakingState(bool isCharacter1Speaking, bool isCharacter2Speaking)
+    {
+        character1Animator.SetBool("isSpeaking", isCharacter1Speaking);
+        character2Animator.SetBool("isSpeaking", isCharacter2Speaking);
     }
 
     private void EndDialogue()
