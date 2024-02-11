@@ -16,12 +16,14 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private Animator character1Animator;
     [SerializeField] private Animator character2Animator;
     [SerializeField] private TextMeshProUGUI dialogueArea;
+    [SerializeField] private BackGroundManager backGroundManager;
 
     private Queue<DialogueLine> lines = new Queue<DialogueLine>();
 
     public bool isDialogueActive = false;
 
     public float typingSpeed = 0.05f;
+    public float delayBeforeTyping = 0f;
 
     private bool isTyping = false;
     private DialogueLine currentLine;
@@ -73,12 +75,19 @@ public class DialogueManager : MonoBehaviour
             currentLine = lines.Dequeue();
 
             SetValuesForCharacters();
+
             StopAllCoroutines();
-            StartCoroutine(TypeSentence(currentLine));
+            StartCoroutine(WaitAndTypeSentence(currentLine, delayBeforeTyping));
         }
     }
 
-    IEnumerator TypeSentence(DialogueLine dialogueLine)
+    private IEnumerator WaitAndTypeSentence(DialogueLine dialogueLine, float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        StartCoroutine(TypeSentence(dialogueLine));
+    }
+
+    private IEnumerator TypeSentence(DialogueLine dialogueLine)
     {
         isTyping = true;
         StringBuilder sb = new StringBuilder();
@@ -98,20 +107,26 @@ public class DialogueManager : MonoBehaviour
         SetCharacterValues(currentLine.character1, character1Icon, character1Name, ref character1Animator);
         SetCharacterValues(currentLine.character2, character2Icon, character2Name, ref character2Animator);
         SetWhoIsSpeaking();
+        delayBeforeTyping = TryToChangeBackGround();
     }
 
     private void SetCharacterValues(Character character, Image characterIcon, TextMeshProUGUI characterName, ref Animator characterAnimator)
     {
+        CanvasGroup canvasGroup = characterIcon.GetComponent<CanvasGroup>();
         if (character != null)
         {
-            characterIcon.gameObject.SetActive(true);
+            canvasGroup.alpha = 1f;
             characterIcon.sprite = character.characterIcon;
             characterName.text = character.characterName;
             characterAnimator = characterIcon.GetComponent<Animator>();
         }
         else
         {
-            characterIcon.gameObject.SetActive(false);
+            if (characterAnimator != null)
+            {
+                characterAnimator.SetBool("isSpeaking", false);
+                canvasGroup.alpha = 0f;
+            }
         }
     }
 
@@ -145,4 +160,15 @@ public class DialogueManager : MonoBehaviour
         character2Icon.gameObject.SetActive(false);
         dialogueArea.text = "The End";
     }
+
+    public float TryToChangeBackGround()
+    {
+        if (currentLine.BackGround != null && currentLine.BackGround != backGroundManager.BackGround.sprite)
+        {
+            backGroundManager.SetNewBackGround(currentLine.BackGround);
+            return backGroundManager.GetAnimationTime();
+        }
+        return 0f;
+    }
+
 }

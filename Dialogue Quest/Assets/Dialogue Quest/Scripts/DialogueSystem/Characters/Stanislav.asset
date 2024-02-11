@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c90d917035cc47943a24cb150aa97dd1, type: 3}
-  m_Name: Aleksey
+  m_Name: Stanislav
   m_EditorClassIdentifier: 
-  characterName: "\u0410\u043B\u0435\u043A\u0441\u0435\u0439"
-  characterIcon: {fileID: 21300000, guid: 36a1b2f873afcf24ba4ff5638602ad10, type: 3}
+  characterName: "\u0421\u0442\u0430\u043D\u0438\u0441\u043B\u0430\u0432"
+  characterIcon: {fileID: 21300000, guid: 5a6f183d5927eba45afadee7afa48dbf, type: 3}
   isSpeaking: 0
