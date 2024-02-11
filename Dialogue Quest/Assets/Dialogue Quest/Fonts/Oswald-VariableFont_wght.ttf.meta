@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1466d137fda344740abf5859db643787
+guid: 5dbe887d861ff6a4f8637895baab51ec
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -9,7 +9,7 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - The Bomb Sound
+  - Oswald
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
