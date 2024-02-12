@@ -33,10 +33,10 @@ Library: D:\Dialogue Quest\Dialogue-Quest\Dialogue Quest\Temp\BurstOutput\tempbu
 --assembly-defines=Unity.VisualScripting.State;
 --assembly-defines=Unity.Notifications.Android;
 --assembly-defines=Unity.Collections.LowLevel.ILSupport;
---assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
---assembly-defines=Unity.Burst.Unsafe;
 --assembly-defines=NSubstitute;
+--assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
 --assembly-defines=System.Runtime.CompilerServices.Unsafe;
+--assembly-defines=Unity.Burst.Unsafe;
 --assembly-defines=Castle.Core;
 --assembly-defines=System.Runtime;
 --assembly-defines=System.Threading.Tasks.Extensions;
